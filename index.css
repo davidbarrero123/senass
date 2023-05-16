@@ -1,0 +1,63 @@
+
+
+body{
+  background-image: linear-gradient(to bottom, #87ceeb, #2ba2dd, #0075cd, #0045b4, #00008b);
+  background-repeat: no-repeat;
+  background-color: #000e93;
+}
+a {
+  text-decoration: none;
+  color: red;
+  border-bottom: 1px solid blue; 
+}
+.pagina{
+  color:yellow;
+}
+.boton {
+  position: relative;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8em 1.5em;
+  display: inline-block;
+  border-radius: 0.5em;
+  transition: all .2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 20px;
+  color: black;
+  background-color: white;
+ }
+ 
+ .boton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .boton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .boton::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+ }
+ 
+ .boton::after {
+  background-color: #fff;
+ }
+ 
+ .boton:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+ }
+  
